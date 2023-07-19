@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>All About Sports</title>
+    <style>
+        #navbar {
+            list-style-type: none;
+            border: 1px solid yellowgreen;
+            overflow: auto;
+            background-color: yellowgreen;
+            width: 100%;
+            padding: 0px;
+        }
+
+        #navitem {
+            float: left;
+            border-right: 1px solid black;
+        }
+
+        #navlinks {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navitem a:hover {
+            background-color: silver;
+        }
+
+        .active {
+            background-color: white;
+        }
+
+        #div1 {
+            display: flex;
+            font-family: cursive;
+            border-radius: 200px;
+            background: linear-gradient(to right, rgb(255, 123, 0), royalblue);
+            width: 450px;
+            text-align: center;
+            position: relative;
+            margin: auto;
+            padding-left: 15px;
+        }
+
+        #soccer {
+            display: flex;
+            font-family: cursive;
+            background: linear-gradient(to right, powderblue, white);
+            width: 700px;
+            height: 350px;
+            text-align: justify;
+            position: relative;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #soccer img {
+            align-self: center;
+            margin: 20px;
+
+        }
+
+        #soccer p {
+            align-self: flex-end;
+            font-family: 'Times New Roman';
+        }
+
+        #cricket {
+            display: flex;
+            font-family: cursive;
+            background: linear-gradient(to right, rgb(233, 245, 188), white);
+            width: 700px;
+            height: 350px;
+            text-align: justify;
+            position: relative;
+            float: right;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        #cricket img {
+            align-self: center;
+            margin: 20px;
+
+        }
+
+        #cricket p {
+            align-self: flex-end;
+            font-family: 'Times New Roman';
+        }
+
+        #tennis {
+            display: flex;
+            font-family: cursive;
+            background: linear-gradient(to right, rgb(252, 235, 199), white);
+            width: 700px;
+            height: 350px;
+            text-align: justify;
+            position: relative;
+        }
+
+        #tennis img {
+            align-self: center;
+            margin: 20px;
+
+        }
+
+        #tennis p {
+            align-self: flex-end;
+            font-family: 'Times New Roman';
+        }
+
+        #table {
+            width: 500px;
+            float: right;
+            position: relative;
+            margin: 100px 20px 20px 20px;
+        }
+
+
+        #table table {
+            font-family: arial;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        #table td,
+        th {
+            border: 1px solid #000000;
+            text-align: left;
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        #table tr:nth-child(even) {
+            background-color: #f9f9ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1>ALL ABOUT SPORTS</h1>
+        <img width="80px" src="logo.png">
+    </div>
+    <ul id="navbar">
+        <li id="navitem"><a href="#home" class="active" id="navlinks">Home</a></li>
+        <li id="navitem"><a href="#news" id="navlinks">News</a></li>
+        <li id="navitem"><a href="#categoriess" id="navlinks">Categories</a></li>
+        <li id="navitem"><a href="#events" id="navlinks">Events</a></li>
+        <li id="navitem"><a href="#contact us" id="navlinks">Contact Us</a></li>
+    </ul>
+    <div class="child" id="table">
+        <table>
+            <tr>
+                <th colspan="4" style=" text-align: center;">Most Goals by a player in a calendar year</th>
+            </tr>
+            <tr>
+                <th>Year</th>
+                <th>Player</th>
+                <th>Club</th>
+                <th>Goals</th>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Robert Lewandowski</td>
+                <td>Bayern Munich</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Lionel Messi</td>
+                <td>Barcelona</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>Harry Kane</td>
+                <td>Tottenham</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Lionel Messi</td>
+                <td>Barcelona</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </div>
+    <div class="child" id="soccer">
+        <h2>Soccer</h2>
+        <p>Soccer, also known as football, has achieved unparalleled global popularity, firmly establishing itself as
+            the world's most widely followed and played sport. With its roots dating back centuries, soccer has
+            transcended geographical, cultural, and language barriers to capture the hearts of billions of fans around
+            the globe. The sport's simplicity and accessibility contribute to its broad appeal, as all that is required
+            to play is a ball and an open space. From informal neighborhood games to prestigious international
+            tournaments like the FIFA World Cup, soccer has the remarkable ability to unite people from diverse
+            backgrounds, fostering a sense of camaraderie and shared passion. The thrill of watching skilled players
+            navigate the field, the intense rivalries between teams, and the moments of sheer brilliance that unfold on
+            the pitch have captivated audiences worldwide.</p>
+        <img src="https://previews.123rf.com/images/artea18/artea181806/artea18180600001/103785539-a-man-playing-football.jpg"
+            width="200px" height="200px">
+
+    </div>
+    <div id="table" style="float: left;">
+        <table>
+            <tr>
+                <th colspan="4" style=" text-align: center;">Most Runs by a player in a calendar year</th>
+            </tr>
+            <tr>
+                <th>Year</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Runs</th>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Virat Kohli</td>
+                <td>India</td>
+                <td>2455</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Virat Kohli</td>
+                <td>India</td>
+                <td>2735</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>Virat Kohli</td>
+                <td>India</td>
+                <td>2818</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Virat Kohli</td>
+                <td>India</td>
+                <td>2591</td>
+            </tr>
+        </table>
+    </div>
+    <div id="cricket">
+        <h2>Cricket</h2>
+        <p>
+            Cricket, a sport known for its rich traditions and captivating gameplay, has gained significant popularity
+            across the globe. Originating in England, cricket has managed to amass a massive following, particularly in
+            countries such as India, Australia, England, Pakistan, and South Africa. The popularity of cricket can be
+            attributed to its compelling blend of skill, strategy, and drama that
+            unfolds over several hours or even days. <br>
+
+            Cricket's enduring appeal lies in its ability to evoke intense emotions and create unforgettable moments.
+            The high-stakes matches, breathtaking displays of athleticism, and nail-biting finishes have made it a
+            favorite pastime for millions. From the iconic Ashes series between England and Australia to the fervent
+            atmosphere of the Indian Premier League, cricket tournaments have become cultural phenomena, uniting nations
+            and sparking nationwide celebrations.
+        </p>
+        <img width="200px" height="200px"
+            src="https://media.istockphoto.com/id/527515909/photo/cricket-player-batsman-silhouette.jpg?s=612x612&w=0&k=20&c=Ul2JWz9VUhFJoUEM0NGAow_cnsZWGwT5726J-QMDvVQ=">
+    </div>
+    <!-- <div id="table">
+        <table style="float: right;"> 
+            <tr>
+                <th colspan="3" style=" text-align: center;">Highest ATP Ranked Singles Players</th>
+            </tr>
+            <tr>
+                <th>Player</th>
+                <th>Country</th>
+                <th>Highest Rank</th>
+            </tr>
+            <tr>
+                <td>Novak Djokovic</td>
+                <td>Serbia</td>
+                <td>389</td>
+            </tr>
+            <tr>
+                <td>Roger Federer</td>
+                <td>Switzerland</td>
+                <td>310</td>
+            </tr>
+            <tr>
+                <td>Pete Sampras</td>
+                <td>USA</td>
+                <td>286</td>
+            </tr>
+            <tr>
+                <td>Ivan Lendl</td>
+                <td>Czechoslovakia</td>
+                <td>270</td>
+            </tr>
+        </table>
+    </div> -->
+    <div id="tennis">
+        <h2>Tennis</h2>
+        <p>Tennis, a sport renowned for its elegance, precision, and intense battles on the court, has garnered immense
+            popularity worldwide. With its roots tracing back to 19th-century England, tennis has evolved into a global
+            phenomenon, captivating fans across continents.
+
+            The popularity of tennis stems from its unique combination of athleticism, skill, and mental fortitude.
+            <br>The sport's fast-paced nature and the sheer spectacle of players pushing themselves to the limits make
+            for captivating viewing experiences.
+
+            Tennis has produced iconic rivalries that have captured the imagination of fans throughout history. From the
+            classic battles between Bjorn Borg and John McEnroe to the legendary matchups of Roger Federer, Rafael
+            Nadal, and Novak Djokovic, these rivalries have added a thrilling dimension to the sport.
+        </p>
+        <img src="https://media.istockphoto.com/id/998509758/vector/tennis-player-isolated-vector-silhouette-abstract-ink-drawing-of-tennis-athlete-forehand.jpg?s=612x612&w=0&k=20&c=Y4hq-2QRxgVga123w5N6hwbq1EySqaZysVc1iERVNm0="
+            width="200px" height="200px">
+    </div>
+    <hr>
+    <div id="end">
+        <h3 style="text-align: center;">Fill the below details if you want to receive daily sports updates:</h3>
+        <form action="https://google.com/">
+            <label for="fname">Your name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="pword">Password:</label><br>
+            <input type="password" id="pword" name="pword"><br>
+            <p>Select your sport</p>
+            <input type="checkbox" id="s1" name="s1" value="Cricket">
+            <label for="s1"> Cricket</label><br>
+            <input type="checkbox" id="s2" name="s2" value="Tennis">
+            <label for="s2">Tennis</label><br>
+            <input type="checkbox" id="s3" name="s3" value="Soccer">
+            <label for="s3">Soccer</label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>Author: Syed Khushnood Ali (4877)<br>
+            <a href="mailto:syedkhushnood02@gmail.com">syedkhushnood02@gmail.com</a>
+        </p>
+        <p>Copyright 2007-2023 by Trans Data. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
