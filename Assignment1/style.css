@@ -1,0 +1,145 @@
+#navbar {
+    list-style-type: none;
+    border: 1px solid rgb(150, 145, 226);
+    overflow: auto;
+    background-color: rgb(150, 145, 226);
+    width: 100%;
+    padding: 0px;
+}
+
+#navitem {
+    float: left;
+    border-right: 1px solid black;
+}
+
+#navlinks {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#navitem a:hover {
+    background-color: silver;
+    color: white;
+}
+
+.active {
+    background-color: white;
+}
+
+#div1 {
+    display: flex;
+    font-family: cursive;
+    background: linear-gradient(to bottom right, rgb(31, 223, 6), rgb(0, 217, 255));
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+#soccer {
+    display: flex;
+    font-family: cursive;
+    background: linear-gradient(to right, powderblue, white);
+    width: 700px;
+    height: 350px;
+    text-align: justify;
+    position: relative;
+    margin: 0px;
+    padding: 10px;
+}
+
+#soccer img {
+    align-self: center;
+    margin: 20px;
+
+}
+
+#soccer p {
+    align-self: flex-end;
+    font-family: 'Times New Roman';
+}
+
+#cricket {
+    display: flex;
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(233, 245, 188), white);
+    width: 700px;
+    height: 350px;
+    text-align: justify;
+    position: relative;
+    float: right;
+    padding: 10px;
+    margin: 20px;
+}
+
+#cricket img {
+    align-self: center;
+    margin: 20px;
+
+}
+
+#cricket p {
+    align-self: flex-end;
+    font-family: 'Times New Roman';
+}
+
+#tennis {
+    display: flex;
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(252, 235, 199), white);
+    width: 700px;
+    height: 350px;
+    padding-left: 10px;
+    text-align: justify;
+    position: relative;
+}
+
+#tennis img {
+    align-self: center;
+    margin: 20px;
+
+}
+
+#tennis p {
+    align-self: flex-end;
+    font-family: 'Times New Roman';
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.table {
+    width: 500px;
+    position: relative;
+    margin: 100px 20px 20px 20px;
+}
+
+
+.table table {
+    font-family: arial;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.table td,
+th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f6f0fa;
+}
+
+.table th {
+    background-color: rgb(64, 127, 221);
+    text-align: center;
+}
