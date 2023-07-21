@@ -1,0 +1,103 @@
+.nav {
+    overflow: hidden;
+    background-color: #000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow:0px 2px #222;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: large;
+    text-align: center;
+    padding: 39px 17px;
+    font-family: cursive;
+}
+
+.nav .active {
+    background-color: #fff;
+    color: #000;
+}
+
+.nav a:hover {
+    background-color: #aaa;
+}
+
+.nav p {
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-size: xx-large;
+    padding-left: 5%;
+    float: left;
+    padding-right: 150px;
+}
+.nav .searcharea {
+    float: right;
+    padding-top: 38px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.nav .signup {
+    float: right;
+    padding-top: 38px;
+    padding-right: 70px;
+    padding-bottom: 10px;
+}
+.nav .signup button:hover
+{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;  
+    border-color: #000;  
+}
+
+.nav .signup button {
+    font-size: large;
+    font-family: fantasy;
+    color: #fff;
+    background-color: #000;
+    border: solid 3px white;
+    border-radius: 50px;
+    padding: 2px 20px;
+}
+
+.intro{
+    background-color: #000;
+    color: #fff;
+    padding: 50px 250px;
+}
+.intro h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro p {
+    font-size: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.serv{
+    background-color: #000;
+    color: #fff;
+    padding: 50px 250px;
+}
+.serv h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.serv li {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: large;
+    text-align: center;
+    font-family: cursive;
+    padding: 10px 30px;
+}
