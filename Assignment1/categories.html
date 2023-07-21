@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
     <link rel="stylesheet" href="style.css">
-    <title>Register</title>
 </head>
-<body>
+<body>  
     <div style="margin: auto;">
         <div id="div1">
             <h1>ALL ABOUT SPORTS</h1>
@@ -17,7 +17,7 @@
         <a href="Assignment1.html" class=".active">Home</a>
         <a href="News.html">News</a>
         <div class="dropdown">
-          <button class="dropbtn" >Categories
+          <button class="dropbtn" class="active">Categories
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -27,40 +27,27 @@
             <a href="https://en.wikipedia.org/wiki/Hockey">Hockey</a>
           </div>
         </div> 
-        <a href="Register.html" class="active">Register</a>
+        <a href="Register.html">Register</a>
         <a href="ContactUs.html">Contact Us</a>
         <input type="submit" name="search">
         <input type="text" placeholder="Search" name="search">
       </div>
-    <div id="end">
-        <h3 style="text-align: center;">Fill the below details if you want to receive daily sports updates:</h3>
-        <form action="https://google.com/">
-            <label for="fname">Your name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="pword">Password:</label><br>
-            <input type="password" id="pword" name="pword"><br>
-            <p>Select your sport</p>
-            <input type="checkbox" id="s1" name="s1" value="Cricket">
-            <label for="s1"> Cricket</label><br>
-            <input type="checkbox" id="s2" name="s2" value="Tennis">
-            <label for="s2">Tennis</label><br>
-            <input type="checkbox" id="s3" name="s3" value="Soccer">
-            <label for="s3">Soccer</label><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-    <hr>
-    
-    
+
+    <label for="Sports">Choose a Sport of your interest:</label>
+
+    <select name="Sports">
+      <option value="cricket">Cricket</option>
+      <option value="tennis">Tennis</option>
+      <option value="football">Football</option>
+      <option value="Hockey">Hockey</option>
+    </select>
+
     <footer>
         <p style="text-align: center;"><small>Copyright 2007-2023 by Trans Data. All Rights Reserved.</small></p>
         <p>Author: Syed Khushnood Ali (4877)<br>
             <a href="mailto:syedkhushnood02@gmail.com">syedkhushnood02@gmail.com</a>
         </p>
     </footer>
+
 </body>
 </html>

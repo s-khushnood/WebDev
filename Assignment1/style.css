@@ -1,32 +1,66 @@
-#navbar {
-    list-style-type: none;
-    border: 1px solid rgb(150, 145, 226);
-    overflow: auto;
-    background-color: rgb(150, 145, 226);
-    width: 100%;
-    padding: 0px;
-}
-
-#navitem {
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
     float: left;
-    border-right: 1px solid black;
-}
-
-#navlinks {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-}
-
-#navitem a:hover {
-    background-color: silver;
+    font-size: 16px;
     color: white;
-}
-
-.active {
-    background-color: white;
-}
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(68, 0, 255);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .active
+  {
+    background-color: red;
+  }
 
 #div1 {
     display: flex;
@@ -40,13 +74,13 @@
 #soccer {
     display: flex;
     font-family: cursive;
-    background: linear-gradient(to right, powderblue, white);
+    background: linear-gradient(to right, rgb(211, 157, 148), rgb(226, 233, 136));
     width: 700px;
     height: 350px;
     text-align: justify;
     position: relative;
     margin: 0px;
-    padding: 10px;
+    padding: 20px;
 }
 
 #soccer img {
@@ -63,7 +97,7 @@
 #cricket {
     display: flex;
     font-family: cursive;
-    background: linear-gradient(to right, rgb(233, 245, 188), white);
+    background: linear-gradient(to right, rgb(119, 218, 243), rgb(231, 233, 132));
     width: 700px;
     height: 350px;
     text-align: justify;
@@ -87,7 +121,7 @@
 #tennis {
     display: flex;
     font-family: cursive;
-    background: linear-gradient(to right, rgb(252, 235, 199), white);
+    background: linear-gradient(to right, rgb(191, 255, 199),rgb(255, 120, 120));
     width: 700px;
     height: 350px;
     padding-left: 10px;
@@ -107,11 +141,11 @@
 }
 
 .main {
+    overflow:hidden;
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
 }
-
 .table {
     width: 500px;
     position: relative;
@@ -142,4 +176,15 @@ th {
 .table th {
     background-color: rgb(64, 127, 221);
     text-align: center;
+}
+.navbar input[type=submit]{
+    margin-top: 15px;
+    float: right;
+    margin-right: 300px;
+    border-radius: 10px;
+}
+.navbar input[type=text]{
+    margin-top: 15px;
+    float: right;
+    border-radius: 10px;
 }

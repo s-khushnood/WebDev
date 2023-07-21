@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <title>Register</title>
 </head>
 <body>
     <div style="margin: auto;">
@@ -17,7 +17,7 @@
         <a href="Assignment1.html" class=".active">Home</a>
         <a href="News.html">News</a>
         <div class="dropdown">
-          <button class="dropbtn" >Categories
+          <button class="dropbtn">Categories
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -27,30 +27,38 @@
             <a href="https://en.wikipedia.org/wiki/Hockey">Hockey</a>
           </div>
         </div> 
-        <a href="Register.html" class="active">Register</a>
-        <a href="ContactUs.html">Contact Us</a>
+        <a href="Register.html">Register</a>
+        <a href="ContactUs.html" class="active">Contact Us</a>
         <input type="submit" name="search">
         <input type="text" placeholder="Search" name="search">
       </div>
-    <div id="end">
-        <h3 style="text-align: center;">Fill the below details if you want to receive daily sports updates:</h3>
-        <form action="https://google.com/">
-            <label for="fname">Your name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="pword">Password:</label><br>
-            <input type="password" id="pword" name="pword"><br>
-            <p>Select your sport</p>
-            <input type="checkbox" id="s1" name="s1" value="Cricket">
-            <label for="s1"> Cricket</label><br>
-            <input type="checkbox" id="s2" name="s2" value="Tennis">
-            <label for="s2">Tennis</label><br>
-            <input type="checkbox" id="s3" name="s3" value="Soccer">
-            <label for="s3">Soccer</label><br>
-            <input type="submit" value="Submit">
+    <div>
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form style="text-align: center; ">
+            <div style="padding-bottom: 10px;">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname">
+                <label for="lname" style="padding-left: 30px;">Last Name:</label>
+                <input type="text" name="lname">
+            </div>
+
+            <div style="padding-bottom: 10px;">
+                <label for="gender">
+                    <h2><b>Gender</b></h2>
+                </label>
+                <input type="radio" name="gm" value="male">
+                <label for="male" style="padding-right: 90px;">Male</label>
+                <input type="radio" name="gm" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <label for="thoughts">
+                    <h2><b>Share you thoughts</b></h2>
+                </label>
+                <textarea name="thoughts" rows="10" style="width: 70%;"></textarea>
+                <input type="submit" style="margin-top: 15px;">
+            </div>
         </form>
     </div>
     <hr>

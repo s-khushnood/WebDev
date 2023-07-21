@@ -4,22 +4,62 @@
 <head>
     <title>All About Sports</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+	
+	<style>
+		.change-color {
+			background-color: red;
+			color: white;
+		}
+		#btn {
+			color: white;
+			background: blue;
+		}
+	</style>
+	
+	<script>
+		$(document).ready(function() {
+			alert("Ready Called!");
+			
+			CalledOnLoad();
+		});
+		
+		function CalledOnLoad() {
+			var heading = document.getElementById("mainHeading");
+			heading.className = 'change-color';
+		}
+	</script>
 </head>
 
 <body>
     <div style="margin: auto;">
         <div id="div1">
-            <h1>ALL ABOUT SPORTS</h1>
-            <img width="80px" src="logo.png">
+            <h1 id="mainHeading">ALL ABOUT SPORTS</h1>
+            <img width="80px" src="logo.png" onclick="CalledFromExternalFile()" />
         </div>
     </div>
-    <ul id="navbar">
-        <li id="navitem"><a href="#home" class="active" id="navlinks">Home</a></li>
-        <li id="navitem"><a href="#news" id="navlinks">News</a></li>
-        <li id="navitem"><a href="#categories" id="navlinks">Categories</a></li>
-        <li id="navitem"><a href="Register.html" id="navlinks">Register</a></li>
-        <li id="navitem"><a href="form.html" id="navlinks">Contact Us</a></li>
-    </ul>
+    <div class="navbar">
+        <a href="Assignment1.html" class="active">Home</a>
+        <a href="News.html">News</a>
+        <div class="dropdown">
+          <button class="dropbtn">Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a>
+            <a href="https://en.wikipedia.org/wiki/Association_football">Soccer</a>
+            <a href="https://en.wikipedia.org/wiki/Tennis">Tennis</a>
+            <a href="https://en.wikipedia.org/wiki/Hockey">Hockey</a>
+          </div>
+        </div> 
+        <a href="Register.html">Register</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <input type="submit" name="search">
+        <input type="text" placeholder="Search" name="search">
+        
+      </div>
     <div class="main">
         <div class="table">
             <table>
