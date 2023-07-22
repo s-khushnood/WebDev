@@ -13,9 +13,9 @@
 <body>
     <div class="nav">
         <span>
-            <p>Math Solutions</p>
+            <p>Data Solutions</p>
         </span>
-        <a class="active" href="#" id="home">Home</a>
+        <a class="active" href="#">Home</a>
         <a href="#" onclick="services()">Services</a>
         <a href="#">News</a>
         <a href="#">About Us</a>
@@ -25,8 +25,13 @@
             <button>Sign Up</button>
         </div>
     </div>
+
+   
+   
+
+
     <div class="intro" id="introduction">
-        <h2>Keep Your Data Organized With Math Solutions.</h2>
+        <h2>Keep Your Data Organized With Data Solutions.</h2>
         <p>A perfect site for you, if you are seeking help with data management.</p>
     </div>
 
@@ -40,10 +45,10 @@
         <img src="image4.png" id="4">
        </div>
        <div class="slide-button">
-        <span class="dot" class=" " onclick="dotchange(3)"></span>
-        <span class="dot" class=" " onclick="dotchange(0)"></span>
-        <span class="dot" class=" " onclick="dotchange(1)"></span>
-        <span class="dot" class=" " onclick="dotchange(2)"></span>
+        <span  class="dot"   onclick="dotchange(3)"></span>
+        <span class="dot"  onclick="dotchange(0)"></span>
+        <span class="dot"  onclick="dotchange(1)"></span>
+        <span class="dot"  onclick="dotchange(2)"></span>
        </div>
     </div>
 
@@ -52,20 +57,35 @@
     <div class="div3">
         <h2>Want to try free demo today!.</h2>
         <p>Just Click on free demo button.</p>
-        <button onclick="table()">Free Demo!</button>
+        <a href="#div3demo"><button onclick="showdemo()">Free Demo!</button></a>
     </div>
-
-
-
-
-    <div class="serv" id="service" style="display: none;">
-        <h2>Here are the services we provide.</h2>
-        <ul>
-            <li>Data Management</li>
-            <li>Dashboards</li>
-            <li>Data Manipulation</li>
-        </ul>
+<div class="demo" id="div3demo">
+    <P>Calculate Your Return on Investment by just adding your data into table as shown in few examples.</P>
+    <div class="demobutton">
+        <button onclick="addrow()">Add Data</button>
     </div>
+    
+    <div class="table">
+        <table id="table1">
+            <tr>
+                <th>Investment ($)</th><th>ROI</th><th>Period(Years)</th><th>Return ($)</th>
+            </tr>
+            <tr>
+                <td>1000</td><td>20</td><td>2</td><td>1440</td>
+            </tr>
+            <tr>
+                <td>1500</td><td>14</td><td>3</td><td>2222</td>
+            </tr>
+            <tr>
+                <td>2300</td><td>9</td><td>5</td><td>3538</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="footer">
+    <P>Author: <a href="mailto:syedkhushnood02@gmail.com">Syed Khushnood Ali</a></P>
+    <small>Copy Rights 2019-2023. All Rights Reserved. Reproducing or copying in prohibited</small>
+</div>
 </body>
 
 </html>
