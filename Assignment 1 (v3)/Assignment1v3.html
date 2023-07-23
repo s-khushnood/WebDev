@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Solutions</title>
-    <link rel="icon" type="image" href="icon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js">    </script>
+    <link rel="icon" type="image" href="supportfiles/icon.ico">
+    <link rel="stylesheet" href="supportfiles/style.css">
+    <script src="supportfiles/script.js">    </script>
 </head>
 
 <body>
+    <!-- First division on page containing header, nav bar links and two buttons -->
     <div class="nav">
         <span>
             <p>Data Solutions</p>
@@ -26,66 +27,82 @@
         </div>
     </div>
 
-   
-   
 
-
+    <!-- Second division on page, containing heading and paragraph -->
     <div class="intro" id="introduction">
         <h2>Keep Your Data Organized With Data Solutions.</h2>
         <p>A perfect site for you, if you are seeking help with data management.</p>
     </div>
-
-  <div class="div2">
+    <!-- third division on page having heading, paragraph a slider division for images and a imgbtn division in it-->
+    <div class="div2">
         <h2>Here are some examples of our work!.</h2>
         <p>See how you can manage your data with our services.</p>
-       <div class="slider">
-        <img src="image1.png" id="1">
-        <img src="image2.png" id="2">
-        <img src="image3.png" id="3">
-        <img src="image4.png" id="4">
-       </div>
-       <div class="slide-button">
-        <span  class="dot"   onclick="dotchange(3)"></span>
-        <span class="dot"  onclick="dotchange(0)"></span>
-        <span class="dot"  onclick="dotchange(1)"></span>
-        <span class="dot"  onclick="dotchange(2)"></span>
-       </div>
+        <div class="slider">
+            <div class="imgbtn"><button onclick="imagechange(1)">
+                    <<< </button><button onclick="imagechange(2)">>>></button></div>
+            <img src="supportfiles/image1.png" id="1">
+            <img src="supportfiles/image2.png" id="2">
+            <img src="supportfiles/image3.png" id="3">
+            <img src="supportfiles/image4.png" id="4">
+        </div>
     </div>
 
 
-
+    <!-- forth divison on page with heading and paragraph, button -->
     <div class="div3">
         <h2>Want to try free demo today!.</h2>
         <p>Just Click on free demo button.</p>
         <a href="#div3demo"><button onclick="showdemo()">Free Demo!</button></a>
     </div>
-<div class="demo" id="div3demo">
-    <P>Calculate Your Return on Investment by just adding your data into table as shown in few examples.</P>
-    <div class="demobutton">
-        <button onclick="addrow()">Add Data</button>
+
+    <!-- fifth division on page to show demo, here are input divisions, button divison, a table division -->
+    <div class="demo" id="div3demo">
+        <P>Calculate Your Return on Investment by just adding your data into table as shown in few examples.</P>
+        <div class="inputs">
+            <input type="number" placeholder="Investment ($)"><input type="number" placeholder="ROI(%)"><input
+                type="number" placeholder="Period(Years)">
+        </div>
+
+
+        <div class="demobutton">
+            <button onclick="addrow()">Add Data</button>
+        </div>
+
+        <div class="table">
+            <table id="table1">
+                <tr>
+                    <th>Investment ($)</th>
+                    <th>ROI</th>
+                    <th>Period(Years)</th>
+                    <th>Return ($)</th>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>1440</td>
+                </tr>
+                <tr>
+                    <td>1500</td>
+                    <td>14</td>
+                    <td>3</td>
+                    <td>2222</td>
+                </tr>
+                <tr>
+                    <td>2300</td>
+                    <td>9</td>
+                    <td>5</td>
+                    <td>3538</td>
+                </tr>
+            </table>
+        </div>
     </div>
-    
-    <div class="table">
-        <table id="table1">
-            <tr>
-                <th>Investment ($)</th><th>ROI</th><th>Period(Years)</th><th>Return ($)</th>
-            </tr>
-            <tr>
-                <td>1000</td><td>20</td><td>2</td><td>1440</td>
-            </tr>
-            <tr>
-                <td>1500</td><td>14</td><td>3</td><td>2222</td>
-            </tr>
-            <tr>
-                <td>2300</td><td>9</td><td>5</td><td>3538</td>
-            </tr>
-        </table>
+
+    <!-- last division for footer -->
+    <div class="footer">
+        <P>Author: <a href="mailto:syedkhushnood02@gmail.com">Syed Khushnood Ali</a></P>
+        <small>Copy Rights 2019-2023. All Rights Reserved. Reproducing or copying in prohibited</small>
     </div>
-</div>
-<div class="footer">
-    <P>Author: <a href="mailto:syedkhushnood02@gmail.com">Syed Khushnood Ali</a></P>
-    <small>Copy Rights 2019-2023. All Rights Reserved. Reproducing or copying in prohibited</small>
-</div>
 </body>
 
 </html>
