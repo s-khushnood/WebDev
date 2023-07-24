@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Loading</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Content Loading Dynamically</h2>
+    <p style="text-align: center;">(Latest on top)</p>
+    <button style="padding:5px; background-color: rgb(89, 241, 191); font-size: medium; margin-left: 45%;">Click Me</button>
+    <div id="blogPosts">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+//             $.ajax({
+//     type: "GET",  
+//     url: "https://jsonplaceholder.typicode.com/posts",
+//     datatype: "json",
+//     success: function(obj){  
+
+//         for (let a = 0; a < 4; a++) {
+//                     createBlogPost(obj[a].title, obj[a].body);
+//                 }
+
+//                 let i = 3;
+//                 $("button").click(function (event) {
+//                     event.preventDefault();
+//                     i = i + 1;
+//                     createBlogPost(obj[i].title, obj[i].body);
+    
+//     },
+//     error: function(obj) { 
+//         alert("Error"); 
+//     }       
+// })
+
+            
+            
+            
+            
+            
+            $.getJSON('https://jsonplaceholder.typicode.com/posts', function (obj) {
+
+                for (let a = 0; a < 4; a++) {
+                    createBlogPost(obj[a].title, obj[a].body);
+                }
+
+                let i = 3;
+                $("button").click(function (event) {
+                    event.preventDefault();
+                    i = i + 1;
+                    createBlogPost(obj[i].title, obj[i].body);
+                });
+
+                
+            });
+            var b = 0;
+            function createBlogPost(title, body) {
+                b = b + 1;
+                const NewClass = 'class' + b;
+                const blogPostDiv = $('<div class="' + NewClass + '"></div>');
+                blogPostDiv.append('<h2>'+b+'. ' + title + '</h2>');
+                blogPostDiv.append('<p>' + body + '</p>');
+                $("#blogPosts").prepend(blogPostDiv);
+                $(".class" + b).css({ "background": "grey", "margin": "5%", "width": "70%", "padding": "2%"})
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
