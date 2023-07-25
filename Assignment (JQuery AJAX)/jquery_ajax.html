@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Loading</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2 style="text-align: center; font-size: l00px;font-family: Verdana, Geneva, Tahoma, sans-serif;" >Content Loading Dynamically</h2>
+    <p style="text-align: center;">(Latest at bottom)</p>
+
+    <div id="blogPosts" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    </div>
+    <button style="padding:5px; background-color: rgb(89, 241, 191); font-size: medium; margin-left: 45%;">Load
+        More</button>
+    <script>
+        $(document).ready(function () {
+
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                method: "GET",
+                dataType: "json",
+                success: function (obj) {
+                    for (let i = 0; i < 6; i++) {
+                        createBlogPost(obj[i].title, obj[i].body);
+                    }
+                    let i = 5;
+                    $("button").click(function (event) {
+                        if (i < 96) {
+                            for (let j = 0; j < 3; j++) {
+                                event.preventDefault();
+                                i = i + 1;
+                                createBlogPost(obj[i].title, obj[i].body);
+                            }
+                        }
+                        else if(i==98)
+                        {
+                            i=i+1;
+                            createBlogPost(obj[99].title, obj[99].body);
+                        }
+                        else {
+                            alert("No more data to display!")
+                        }
+                    });
+                },
+                error: function (error) {
+                    alert("Error: Error occured during fetchng");
+                }
+            })
+
+            var b = 0;
+            function createBlogPost(title, body) {
+                b = b + 1;
+                const NewClass = 'class' + b;
+                const blogPostDiv = $('<div class="' + NewClass + '"></div>');
+                blogPostDiv.append('<h2>' + b + '. ' + title + '</h2>');
+                blogPostDiv.append('<p>' + body + '</p>');
+                $("#blogPosts").append(blogPostDiv);
+                $(".class" + b).css({
+                    " box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)",
+                    "width": " 30%",
+                    "border-radius": "5px",
+                    "border": "solid black 5px",
+                    "padding": "2px 16px",
+                    "margin": "3px 3px",
+                    "backgroundColor": "powderBlue",
+                })
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
