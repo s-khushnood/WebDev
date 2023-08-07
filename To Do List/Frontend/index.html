@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav>
+      <ul>
+        <li>
+          <h2>My To-do List</h2>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- posts container -->
+    <h1>Add Task</h1>
+<form id="TaskForm">
+          <div class="form-group">
+              <label for="title">Title:</label>
+              <input type="text" name="title" id="title" required autofocus>
+          </div>
+  
+          <div class="form-group">
+              <label for="content">Description:</label>
+              <textarea name="content" id="content" required cols="48" rows="6" autofocus></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Add Task" class="add-task-btn">
+        </div>
+      </form>
+      <p id="remain-para" style="text-align: center;">Total Remaining: <span id="remaining-count">1</span></p>
+      <div class="incom-tasks">
+        <div class="tasks">
+          <h3>Manhattan Project</h3>
+          <p> As UK and Canada to help complete the project ASAP.</p>
+          <button class="delete-btn">Delete</button><button class="complete-btn">Completed</button>
+        </div>
+      </div>
+      <h2 style="text-align: center;">Completed Tasks</h2>
+      <p id="comp-para" style="text-align: center;">Total Completed: <span id="com-count">1</span></p>
+      <div class="com-tasks">
+        <div class="tasks">
+          <h3>Science Fair Project</h3>
+          <p>Collect different parts from group mates and assemble them.</p>
+        </div>
+      </div>
+
+    <!-- scripts -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
